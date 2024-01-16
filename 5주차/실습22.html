@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>배경 그라데이션</title>
+        <style>
+            div {
+		        width:500px;
+		        height:300px;
+		        border-radius:10px;
+	        }
+            .grad {
+                background: blue;
+                background: linear-gradient(to right bottom, blue, white);
+            }
+            .grad1 {
+                background: #f00;
+                background: linear-gradient(45deg, #f00, #fff);
+            }
+            .grad2 {
+                background: #06f;
+                background: linear-gradient(to bottom, #06f, white 30%, #06f);
+            }
+            .rgrad1 {
+                background: red;
+                background: radial-gradient(white, yellow, red);
+            }
+            .rgrad2 {
+                background: red;
+                background: radial-gradient(circle, white, yellow, red);
+            }
+            .rgrad3 {
+                background: blue;
+                background: radial-gradient(circle at 20% 20%, white, blue);
+            }
+            .rgrad4 {
+                background: skyblue;
+                background: radial-gradient(yellow, white, orange);
+            }
+            .rgrad5 {
+                background: skyblue;
+                background: radial-gradient(yellow, white 10%, orange 60%);
+            }
+            .rpgrad {
+                background: red;
+                background: repeating-linear-gradient(yellow, red 20px);
+            }
+            .rprgrad {
+                background: #ccc;
+                background: repeating-radial-gradient(circle, white, #ccc 10%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grad"></div> 
+        <div class="grad1"></div> 
+        <div class="grad2"></div>
+        <div class="rgrad1"></div>
+        <div class="rgrad2"></div>
+        <div class="rgrad3"></div>
+        <div class="rgrad4"></div>
+        <div class="rgrad5"></div>
+        <div class="rpgrad"></div>
+        <div class="rprgrad"></div>
+    </body>
+</html>
+
+

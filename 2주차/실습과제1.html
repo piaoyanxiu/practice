@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>피자 주문서</title>
+    </head>
+    <body>
+        <form>
+            <label for="name">고객명:</label>
+            <input type="text" id="name">
+            <br>
+            <label for="phone">전화번호:</label>
+            <input type="tel" id="phone">
+            <br>
+            <label for="email">E-mail:</label>
+            <input type="text" id="email">
+            <br>
+            <label for="type">피자 선택:</label>
+            <select id="type">
+                <option value="cheese-crape" selected>치즈 크레이프 샌드</option>
+                <option value="avocado-shrimp">아보카도 새우</option>
+                <option value="corn-cheese-potato">대만 콘치즈 감자</option>
+                <option value="margherita">이탈리안 마르게리따</option>
+            </select>
+            <br> <br>
+
+            <fieldset>
+                <legend>피자 사이즈</legend>
+                <label><input type="radio" name="size" value="s">Small</label> <br>
+                <label><input type="radio" name="size" value="m">Medium</label> <br>
+                <label><input type="radio" name="size" value="l">Large</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>토핑 선택</legend>
+                <label><input type="checkbox" value="bacon">베이컨</label> <br>
+                <label><input type="checkbox" value="cheese">치즈</label> <br>
+                <label><input type="checkbox" value="onion">양파</label> <br>
+                <label><input type="checkbox" value="mushroom">버섯</label>
+            </fieldset>
+            <br>
+
+            <label for="time">희망 배송 시간:</label>
+            <input type="time" id="time"> <br> <br>
+
+            <label for="memo">배송 시 요청사항:</label>
+            <textarea id="memo" cols="20" rows="4"></textarea> <br> <br>
+
+            <input type="submit" value="주문하기">
+        </form>
+    </body>
+</html>
+
+
+
